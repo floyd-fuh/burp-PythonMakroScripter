@@ -1,0 +1,12 @@
+<p>This extension allows execution of a custom Python script for a Makro Action in the Session Handling rules of Burp.</p>
+<p>To use, type or paste a Python script into the &quot;Makro Script&quot; tab, and configure the Makro to your needs. The script will be executed when you configure it as a Makro action in the Project Options - Sessions - Session Handling Rules (Add one) - Rule Action. Simply consider the &quot;Makro Script&quot; tab to be the code of the performAction function as described on the <a href="https://portswigger.net/burp/extender/api/burp/ISessionHandlingAction.html#performAction(burp.IHttpRequestResponse,%20burp.IHttpRequestResponse[])">API description of Burp for the ISessionHandlingAction</a>.</p>
+<p>The following variables are defined in the context of the script:</p>
+<ul>
+	<li>extender</li>
+	<li>callbacks</li>
+	<li>helpers</li>
+	<li>currentRequest</li>
+	<li>macroItems</li>
+	<li><a href="https://portswigger.net/burp/extender/api/">All interfaces (IBurpCollaboratorClientContext, etc.) from the current (May, 5 2017) Burp API</a></li>
+</ul>    
+<p>This plugin is only a very simple modification of Marcin Wielgoszewski's Python Scripter, simply swapping the processHttp API with the performAction API.</p>

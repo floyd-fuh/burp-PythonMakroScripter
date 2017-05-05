@@ -1,0 +1,10 @@
+Uuid: 
+ExtensionType: 
+Name: Python Makro Scripter
+ScreenVersion: 1.0
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: False
+Author: floyd, modzero AG (a simple modified version of Marcin Wielgoszewski's Python Scripter)
+ShortDescription: Allows execution of a custom Python script on a Makro Action.
+EntryPoint: PythonMakroScripter.py
